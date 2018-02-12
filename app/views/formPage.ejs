@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%= title %>
+  </title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+  <link rel='stylesheet' href='./Content/app.css' />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">
+            <i class="fa fa-lg fa-home"></i> Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/form">Form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/thanks">Thanks</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <h1>
+          <%= title %>
+        </h1>
+        <p>
+          <!-- Form -->
+          <form method="post" action="">
+            <table>
+              <tr>
+                <td><label id="txtFName">First Name: </label></td>
+                <td><input type="text" size="30" placeholder="Enter your first name" name="name"></td>
+              </tr>
+              <tr>
+                <td><label id="txtLName">Last Name: </label></td>
+                <td><input type="text" size="30" placeholder="Enter your last name" name="lName"></td>
+              </tr>
+              <tr>
+                <td><label id="txtEmail">Email: </label></td>
+                <td><input type="text" size="30" placeholder="Enter your email" name="email" value=<%= user %>></td>
+              </tr>
+              <tr>
+                <td><label id="txtFName">Favourite Comic Book Hero: </label></td>
+                <td><input type="text" size="30" placeholder="Enter their first name" name="Hname"></td>
+              </tr>
+              <tr>
+                <td><label id="txtLName">Favourite Anime Character: </label></td>
+                <td><input type="text" size="30" placeholder="Enter their first name" name="CName"></td>
+              </tr>
+              <tr>
+              <tr>
+                <td><label id="txtLName">Comments: </label></td>
+                <td><textarea  id="comments" name="textArea" style="width: 407px; height: 102px" placeholder="Enter your comments here"></textarea></td>
+              </tr>
+              <tr>
+                <td>
+                  <br />
+                  <input class="btn .btn-primary" type="submit" value="Submit" name="submit">
+                </td>
+              </tr>
+            </table>
+          </form>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Section -->
+  <script src="./jquery/dist/jquery.min.js"></script>
+  <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="./Scripts/core/app.js"></script>
+</body>
+
+</html>
+
