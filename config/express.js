@@ -1,3 +1,4 @@
+"use strict"
 let express = require('express');
 let path = require('path'); // built-in node module
 //let favicon = require('serve-favicon');

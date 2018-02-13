@@ -1,3 +1,4 @@
+"use strict"
 let express = require('express');
 let router = express.Router();
 
@@ -11,8 +12,10 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-  res.redirect('/form');
-})
+  console.log("Pies");
+  console.log(req.body.username);
+  controller.procLogin(req, res);
+});
 
 /* GET form page. */
 router.get('/form', (req, res, next) => {

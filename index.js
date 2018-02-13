@@ -1,4 +1,4 @@
-
+"use strict"
 let app = require('./config/express');
 let debug = require('debug')('comp308-w2018-lesson2:server');
 let http = require('http'); // module built-in to node
